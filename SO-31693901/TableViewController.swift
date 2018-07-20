@@ -2,7 +2,7 @@
 //  TableViewController.swift
 //  SO-31693901
 //
-//  Copyright © 2017 Xavier Schott
+//  Copyright © 2017, 2018 Xavier Schott
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
 //  in the Software without restriction, including without limitation the rights
@@ -58,6 +58,6 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        return tableView.dequeueReusableCell(withIdentifier: "cell") as UITableViewCell!
+        return tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
     }
 }
